@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive-Template-Using-bootstrap</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap5/bootstrap.bundle.min.js">
+    <script src="./bootstrap.min.js"></script>
+    <script src="./bootstrap5/bootstrap.bundle.min.js"></script>
+    <script src="./jquery.min.js"></script>
+    <script src="./popper.min.js"></script>
+    <style>
+        body{
+            margin: 0%;
+            width: 100%;            
+            box-sizing: border-box
+        }
+
+        .navbar{
+            height: 13vh;
+            background-color: blueviolet;
+        }
+
+        .Fooder{
+            height: 10vh;
+            position: absolute;
+            bottom: 0vh;            
+        }
+
+        .MainDiv{
+            height: 70vh;
+            width: 100%;
+        }
+
+        .FirstDiv{            
+            height: 40vh;
+            width: 20vw;
+            margin-right: 1vw;
+            margin-left: 1vw;
+            margin-top: 2vh;
+        }
+
+        .SecondDiv{
+            height: 73vh;
+            width: 20vw;        
+            margin-top: 2vh;
+        }
+
+        .link1,.link2,.link3{
+            height: 7vh;
+            width: 95%;
+            margin-top: 2vh;
+        }
+
+        .link{
+            height: 7vh;
+            width: 95%;           
+        }
+/* responsive for tablet-----------767px*/
+
+        @media only screen and (max-width: 767px){
+            .SecondDiv{
+               height: 30vh;
+               width: 60vw;      
+               margin-left: 6vw;            
+            }
+
+            .FirstDiv{
+                margin-left: 4vw;
+            }
+        }
+        @media only screen and (max-width: 425px){
+            .SecondDiv{
+                margin-bottom: -17vh;
+                height: 20vh;
+                margin-left: 8vw;           
+            }  
+            .FirstDiv{
+                margin-left: 10vw;
+            }      
+        }       
+    </style>
+</head>
+<body>
+    <div>
+        <!--Navigation For Header Section -->
+        <nav class="navbar navbar-light">
+            <div class="container-fluid">              
+            </div>
+        </nav>
+        <!--Body Section -->
+        <div class="MainDiv row justify-content-md-between">
+            <div class="FirstDiv col-11 col-sm-5 col-md-3">
+                <div class="link bg-info "></div>
+                <div class="link1 bg-info "></div>
+                <div class="link2 bg-info "></div>
+                <div class="link3 bg-info "></div>
+
+            </div>
+            <div class="SecondDiv bg-info col-11 col-md-3"></div>
+        </div> 
+        <!--Footer Section -->    
+        <div class="container-fluid bg-primary Fooder"></div>                
+    </div>    
+</body>
+</html>

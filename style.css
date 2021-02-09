@@ -1,0 +1,108 @@
+body{
+    margin: 0%;
+    width: 100%;
+}
+
+.navbar{
+    height: 13vh;
+    width: 100%;
+    background-color: rgb(128, 33, 218);
+}
+
+.grid{
+    display: flex;
+    justify-content: space-between;    
+}
+
+.gridLeft{
+    margin-left: 0.5vw;
+    height: 50vh;
+    width: 30vw;  
+    margin-top: 2vh;
+}
+
+.gridLeftBox{
+    height: 7vh;
+    width: 25vw;
+    background-color: rgb(16, 159, 224); 
+}
+
+.glb2, .glb3{
+    margin-top: 3vh;
+}
+
+.gridRight{
+    margin-right: 0.5vw;
+    position: relative;
+    float: right;
+    height: 70vh;
+    width: 25vw;
+    background-color: rgb(16, 159, 224);
+    margin-top: 2vh;
+}
+
+.fooder{    
+   position: absolute;
+   bottom: 0%;
+    background-color: black;
+    height: 13vh;
+    width: 100%;
+}
+
+
+/* responsive for tablet*/
+
+@media only screen and (max-width: 768px){
+    .gridRight{
+        position: absolute;
+        top: 60vh;        
+        margin-right: 0.5vw;       
+        height: 23vh;
+        width: 95vw;
+        margin-left: 2.5vw;
+        background-color: rgb(16, 159, 224);   
+    }
+
+    .gridLeftBox{
+        height: 7vh;
+        width: 35vw;
+        background-color: rgb(16, 159, 224);
+    }
+    
+    .fooder{    
+        margin-top:22vh;
+        background-color: black;
+        height: 13vh;
+        width: 100%;
+    }
+
+    .gridLeft{
+        margin-left: 3vw;
+    }
+}
+
+
+/*Responsive for mobile*/
+
+@media only screen and (max-width: 375px){
+
+    .gridLeftBox{
+        height: 7vh;
+        width: 80vw;
+        background-color: rgb(16, 159, 224);    
+    }
+
+    .gridLeft{
+        margin-left: 10vw;
+    }
+
+    .gridRight{
+        position: absolute;
+        top: 61vh;        
+        margin-right: 0.5vw;       
+        height: 23vh;
+        width: 95vw;
+        margin-left: 2.5vw;
+        background-color: rgb(16, 159, 224);   
+    }
+}
